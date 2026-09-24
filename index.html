@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Individu - Formulir</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="latar">
+        <div class="kartu-form">
+            <div class="bagian-judul">
+                <h1>Formulir Pendaftaran</h1>
+                <p>Silakan Lengkapi Data Diri Anda</p>
+            </div>
+
+           <form action="Tugas3.html" method="get">
+                <div class="kelompok-input">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+                </div>
+
+                <div class="kelompok-input">
+                    <label for="sandi">Kata Sandi</label>
+                    <input type="password" id="sandi" name="sandi" placeholder="Masukkan Kata Sandi" required>
+                </div>
+
+                <div class="kelompok-input">
+                    <label for="alamat">Alamat Lengkap</label>
+                    <textarea id="alamat" name="alamat" rows="4" placeholder="Tulis Alamat Lengkap..."></textarea>
+                </div>
+
+                <div class="kelompok-input">
+                    <label>Jenis Kelamin</label>
+                    <div class="baris-pilihan">
+                        <label class="pilihan-satu">
+                            <input type="radio" name="jk" value="laki-laki" required>
+                            <span class="tombol-bulat"></span> Laki-laki
+                        </label>
+                        <label class="pilihan-satu">
+                            <input type="radio" name="jk" value="perempuan">
+                            <span class="tombol-bulat"></span> Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <div class="kelompok-input">
+                    <label>Minat & Hobi</label>
+                    <div class="baris-pilihan">
+                        <label class="pilihan-satu">
+                            <input type="checkbox" name="hobi" value="membaca">
+                            <span class="kotak-centang"></span> Membaca
+                        </label>
+                        <label class="pilihan-satu">
+                            <input type="checkbox" name="hobi" value="bermain_game">
+                            <span class="kotak-centang"></span> Bermain Game
+                        </label>
+                        <label class="pilihan-satu">
+                            <input type="checkbox" name="hobi" value="musik">
+                            <span class="kotak-centang"></span> Musik
+                        </label>
+                    </div>
+                </div>
+
+                <div class="kelompok-input">
+                    <label for="hobi_lain">Hobi / Minat Lainnya</label>
+                    <input type="text" id="hobi_lain" name="hobi_lain" placeholder="Tulis hobi kamu sendiri...">
+                </div>
+
+                <div class="kelompok-input">
+                    <label for="prodi">Program Studi</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                        <option value="tk">Teknik Komputer</option>
+                        <option value="mi">Manajemen Informatika</option>
+                    </select>
+                </div>
+
+                <div class="kelompok-input tombol-pusat">
+                    <button type="submit" class="tombol-kirim">Kirim Formulir</button>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <p><a href="Tugas3.html" style="color: #6366f1; text-decoration: none; font-weight: 600;">Buka Kalkulator Aritmatika →</a></p>
+                    </div>
+                    <!-- ✅ SAMPAI SINI -->
+                    
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

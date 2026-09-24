@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.latar {
+    min-height: 100vh;
+    background: url("https://konten.usu.ac.id/storage/satker/0/usuacid/about/biro-usu.webp?w=3840&q=75");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.kartu-form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.bagian-judul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bagian-judul h1 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.bagian-judul p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.kelompok-input {
+    margin-bottom: 20px;
+}
+
+.kelompok-input > label:first-child {
+    display: block;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #fcfcfd;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #6366f1;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
+
+.baris-pilihan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.pilihan-satu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #475569;
+    padding: 5px 0;
+}
+
+.pilihan-satu input[type="radio"],
+.pilihan-satu input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tombol-bulat {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+}
+
+.pilihan-satu input[type="radio"]:checked + .tombol-bulat {
+    border-color: #6366f1;
+}
+
+.pilihan-satu input[type="radio"]:checked + .tombol-bulat::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.kotak-centang {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+}
+
+.pilihan-satu input[type="checkbox"]:checked + .kotak-centang {
+    background-color: #6366f1;
+    border-color: #6366f1;
+}
+
+.pilihan-satu input[type="checkbox"]:checked + .kotak-centang::after {
+    content: '✓';
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tombol-pusat {
+    margin-top: 30px;
+}
+
+.tombol-kirim {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tombol-kirim:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+.tombol-kirim:active {
+    transform: translateY(0);
+}
